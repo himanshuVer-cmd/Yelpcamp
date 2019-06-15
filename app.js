@@ -55,4 +55,4 @@ app.use(indexRoutes);
 app.use(campgroundRoutes);
 app.use(commentRoutes);
 
-app.listen(2000 , () => console.log("Yelpcamp Server Initiated!!"));
+app.listen(process.env.PORT || 2000 , () => console.log("Yelpcamp Server Initiated!!"));
